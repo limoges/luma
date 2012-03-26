@@ -1,5 +1,6 @@
 /* 
- * Luma is a simple header for Graphics Mode ANSI Escape Sequence support.
+ * Luma is a bunch of macros to make remembering ANSI Escape Sequence
+ * easier.
  *
  * Copyright (c) 2012 - Julien Limoges (julien.limoges.2@ens.etsmtl.ca)
  *

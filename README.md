@@ -1,9 +1,7 @@
 Luma
 ====
-Luma is just a bunch of macros written to make it easier to use
-ANSI Escape Sequence's graphics mode (text styling and coloring).
-
-License stuff is just to make it publicly usable. Have no fear.
+Luma is just a bunch of macros written to make it easier to use/remember
+ANSI Escape Sequences.
 
 Usage
 -----
@@ -22,7 +20,7 @@ List of escape sequences
 ------------------------
 These are complete escape sequences to use for formatting output.
 
-There are 3 categories of supported escape sequences:
+There are 3 categories of supported escape sequences:  
 - Text Attributes   `ET`  
   for styling the text.
 
@@ -34,36 +32,37 @@ There are 3 categories of supported escape sequences:
 
 From [Wikipedia/ANSI_escape_code](en.wikipedia.org/wiki/ANSI_escape_code)
 
-`ET_BRIGHT`/`ET_BRIGHT_OFF`  
+`ET_BRIGHT`/`ET_BRIGHT_OFF` 
 Turn on/off Bright (increased intensity) or Bold  
 
-`ET_FAINT`/`ET_FAINT_OFF`  
+`ET_FAINT`/`ET_FAINT_OFF` 
 Turn on/off Faint (decrease intensity)  
 
-`ET_ITALIC`/`ET_ITALIC_OFF`  
+`ET_ITALIC`/`ET_ITALIC_OFF` 
 Turn on/off Italic  
 
-`ET_UNDERLINE`/`ET_UNDERLINE_OFF`  
+`ET_UNDERLINE`/`ET_UNDERLINE_OFF` 
 Turn on/off Underline  
 
-`ET_BLINK`/`ET_BLINK_OFF`  
+`ET_BLINK`/`ET_BLINK_OFF` 
 Turn on/off Blink  
 
-`ET_REVERSE`/`ET_REVERSE_OFF`  
+`ET_REVERSE`/`ET_REVERSE_OFF` 
 Turn on/off Reverse (swap foreground and background)  
   
-`ET_CROSSED`/`ET_CROSSED_OFF`  
+`ET_CROSSED`/`ET_CROSSED_OFF` 
 Turn on Strikethrough  
   
-`EF_COLOR`
-Turn on foreground color where COLOR 
-{ BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, DEFAULT }  
+`EF_COLOR` 
+Turn on foreground color where  
+COLOR = { BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, DEFAULT }  
   
 `EB_COLOR`
-Turn on background color where COLOR
-{ BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, DEFAULT }
+Turn on background color where  
+COLOR = { BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, DEFAULT }
 
-Escape codes
-------------
-The different codes mapping to different ANSI Escape Sequences.
+Compatibility
+-------------
+Run `esc_support` after `make` to check your terminal's support for
+ANSI escape sequences.
 
